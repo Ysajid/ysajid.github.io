@@ -1,0 +1,128 @@
+body{
+  height:100%;
+  background:#16191a;
+}
+.square {
+  margin:25% auto;
+  width:2em;
+  height:2em;
+  background:white;
+  position:relative;
+}
+
+.square:nth-child(2) {
+  margin:0;
+  position: absolute;
+  top:0%;
+  right:1.5em;
+  animation: fly-1 2s infinite linear;
+}
+.square:nth-child(3) {
+  margin:0;
+  position: absolute;
+  top:0%;
+  right:-1.5em;
+  animation: fly-1 2s infinite linear;
+}
+.square:nth-child(4) {
+  margin:0;
+  position: absolute;
+  top:0%;
+  right:2.6em;
+  --animation-delay:1s;
+  animation:fly-2 2s infinite linear .2s forwards;
+}
+.square:nth-child(5) {
+  margin:0;
+  position: absolute;
+  top:0%;
+  right:-2.6em;
+  animation:fly-2 2s infinite linear .2s forwards;
+}
+.square:nth-child(6) {
+  margin:0;
+  position: absolute;
+  top:0%;
+  right:3.4em;
+  animation:fly-3 2s infinite linear .3s forwards;
+}
+.square:nth-child(7) {
+  margin:0;
+  position: absolute;
+  top:0%;
+  right:-3.4em;
+  animation:fly-3 2s infinite linear .3s forwards;
+}
+.square:nth-child(8) {
+  margin:0;
+  position: absolute;
+  top:0%;
+  right:4em;
+  animation:fly-4 2s infinite linear .35s forwards;
+}
+.square:nth-child(9) {
+  margin:0;
+  position: absolute;
+  top:0%;
+  right:-4em;
+  animation:fly-4 2s infinite linear .35s forwards;
+}
+
+@keyframes fly-1 {
+  0%{
+    transform:scale(.7);
+    top: .2em;
+  }
+  60% {
+    transform:scale(.7);
+    top: -.8em;
+  }
+  100%{
+    transform:scale(.7);
+    top:.2em;
+  }
+}
+
+@keyframes fly-2 {
+  0%{
+    transform:scale(.5);
+    top:.8em;
+  }
+  60% {
+    transform:scale(.5);
+    top:-1.4em;
+  }
+  100%{
+    transform:scale(.5);
+    top:.8em;
+  }
+}
+
+@keyframes fly-3 {
+  0%{
+    transform:scale(.4);
+    top:1.4em;
+  }
+  60% {
+    transform:scale(.4);
+    top:-2em;
+  }
+  100%{
+    transform:scale(.4);
+    top:1.4em;
+  }
+}
+@keyframes fly-4{
+  0%{
+    transform: scale(.3);
+    top:1.8em;
+  }
+  60% {
+    transform:scale(.3);
+    top:-2.3em;
+  }
+  100%{
+    transform:scale(.3);
+    top:1.8em;
+  }
+}
