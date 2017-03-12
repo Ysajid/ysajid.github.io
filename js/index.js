@@ -9,6 +9,7 @@ $("a").on('click', function(event) { //event overriding for smoothe scrolling ef
 
     // Using jQuery's animate() method to add smooth page scroll
     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      document.getElementById("page-nav").classList.toggle("hidden-xs");
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 500, function(){
@@ -18,3 +19,9 @@ $("a").on('click', function(event) { //event overriding for smoothe scrolling ef
     });
   } // End if
 });
+
+$("#menu-btn").on('click' , function() {
+  document.getElementById("page-nav").classList.toggle("hidden-xs");
+});
+
+
