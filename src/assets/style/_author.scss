@@ -1,0 +1,140 @@
+.square {
+  margin: 25% auto;
+  width: 2em;
+  height: 2em;
+  background: white;
+  position: relative;
+
+  &:nth-child(2) {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: 1.5em;
+    animation: fly-1 2s infinite linear;
+  }
+
+  & :nth-child(3) {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: -1.5em;
+    animation: fly-1 2s infinite linear;
+  }
+
+  &:nth-child(4) {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: 2.6em;
+    --animation-delay: 1s;
+    animation: fly-2 2s infinite linear 0.2s forwards;
+  }
+
+  &:nth-child(5) {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: -2.6em;
+    animation: fly-2 2s infinite linear 0.2s forwards;
+  }
+
+  &:nth-child(6) {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: 3.4em;
+    animation: fly-3 2s infinite linear 0.3s forwards;
+  }
+
+  &:nth-child(7) {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: -3.4em;
+    animation: fly-3 2s infinite linear 0.3s forwards;
+  }
+
+  &:nth-child(8) {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: 4em;
+    animation: fly-4 2s infinite linear 0.35s forwards;
+  }
+
+  &:nth-child(9) {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: -4em;
+    animation: fly-4 2s infinite linear 0.35s forwards;
+  }
+}
+
+@keyframes fly-1 {
+  0% {
+    transform: scale(0.7);
+    top: 0.2em;
+  }
+
+  60% {
+    transform: scale(0.7);
+    top: -0.8em;
+  }
+
+  100% {
+    transform: scale(0.7);
+    top: 0.2em;
+  }
+}
+
+@keyframes fly-2 {
+  0% {
+    transform: scale(0.5);
+    top: 0.8em;
+  }
+
+  60% {
+    transform: scale(0.5);
+    top: -1.4em;
+  }
+
+  100% {
+    transform: scale(0.5);
+    top: 0.8em;
+  }
+}
+
+@keyframes fly-3 {
+  0% {
+    transform: scale(0.4);
+    top: 1.4em;
+  }
+
+  60% {
+    transform: scale(0.4);
+    top: -2em;
+  }
+
+  100% {
+    transform: scale(0.4);
+    top: 1.4em;
+  }
+}
+
+@keyframes fly-4 {
+  0% {
+    transform: scale(0.3);
+    top: 1.8em;
+  }
+
+  60% {
+    transform: scale(0.3);
+    top: -2.3em;
+  }
+
+  100% {
+    transform: scale(0.3);
+    top: 1.8em;
+  }
+}
